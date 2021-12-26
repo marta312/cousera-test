@@ -1,11 +1,225 @@
+<!-- browser-sync start --server -- directory --files "*" --> 
+<!-- jsfiddle -->
+<!-- codepen, css-tricks-->
+<!-- caniuse for checking browser compatibility -->
+<!-- w3c validate, browser statistics -->
+<!-- w3 types of content-->
+<!-- CSS ZEN GARDEN -->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hellp Cousera Test</title>
+
+    <!-- tile is needed -->
+    <title>Hello Cousera Test</title>
+
+    <style>
+        p {
+            color: blue;
+            font-size: 20px;
+            width: 280 px;
+        }
+        h1 {
+            color: red;
+            font-size: 50px;
+            text-align: center;
+            font-style: oblique;
+
+        }
+        .green {
+            color: green;
+        }
+        .italic {
+            font-style: italic;
+        }
+
+        .green, .italic {
+            font-style: italic;
+
+        }
+        #cssIDselector{
+            color: yellowgreen;
+        }
+        ul {
+            list-style-type: square;
+            font-size: 20px;
+        }
+        ul.big {
+            font-size: 25px;
+        }   
+        ul.big > li {
+            color: grey;
+        }       
+
+        header li {
+            font-size: 20px;
+            list-style: none;
+        } 
+        header li:nth-child(2){
+            font-size: 25px;
+        }       
+        a:link, a:visited{
+            text-decoration: none;
+            background-color: green;
+            border: 1px solid blue;
+            color: black;
+            display: black;
+            text-align: center;
+            margin-bottom: 1px;
+        }
+        a:hover, a:active{
+            background-color: red;
+            color: purple;
+        }
+        section li:nth-child(odd) {
+            color: grey;
+        }
+        section li:nth-child(1) {
+            font-style: oblique;
+        }
+        section li:nth-child(1):hover {
+            background-color: red;
+        }        
+    </style>
 </head>
 <body>
-<h1>H1 Hello, Hello</h1>
+    <header> This is the header of the page 
+        <ul>
+            <li><a href="#w1"> Week 1</a></li>
+            <li><a href="#w2"> Week 2</a></li>
+
+        </ul>
+    </header>
+
+    <h1 id="w1">Week 1</h1>
+        <section>
+            <h2>Content Models</h2>
+                <ul>
+                    <li>Block Level (div). html5 Flow Elements</li>
+                    <li>Inline (span), can only contain inline. html5 Phrasing Elements</li>
+                </ul>
+        </section>
+
+        <section>
+            <h2>Heading elements</h2>
+            <article> <h3>Examples</h3>h1 to h6, header, Section, article, aside, footer </article>
+        </section>
+
+        <section>
+            <h2>Lists</h2> 
+            <ul>
+                <li>Unordered list ul </li>
+                <li>Unordered list ol </li>
+                <li>Only li statements allowed </li>
+                <li>Example of ordered list
+                    <ol>
+                        <li>Item1</li>
+                        <li>Item2</li>
+                    </ol>
+                </li>
+                <li>Nesting is possible to make sublists</li>
+
+            </ul>
+        </section>
+
+        <section>
+            <h2>HTML Characters Entity Reference</h2> 
+            <ul>
+                <li>should ot use at all greater, lower and commercial E, use escape</li>
+                <li>&lt; &gt; &amp;</li>
+                <li>&nbsp;not&nbsp;split&nbsp;not&nbsp;breaking&nbsp;space&nbsp;nbsp;</li>
+                <li>extra spaces use span with left margin, not use nbsp;</li>
+                <li>to send email to browser do not use utf use the reference quot to make quotes;&quot;"Hallo&quot;"</li>
+                <li>help using characters not available in keyboard, as copyright simbol</li>
+                <li>avoid rendering issues</li>
+            </ul>
+        </section> 
+
+        <section>
+            <h2>Create Links</h2> 
+            <ul>
+                <li>use &lt;a href="same-dir.html" title="samedir link"&gt;What you see (if div link in all div ) &lt;\a&gt; is linking to a file in same directory</li>
+                <li>External links: put the address and use target=&quot;_blank&quot; for not leaving your website, open new tab</li>
+                <li>Fragment Identifier to link to sections or other in same page by ID or create a refrence list. can be embedded in address so you can send links pointing to section. Use href="#id" </li>
+            </ul>
+        </section>     
+
+        <section>
+            <h2>Display Images</h2> 
+            <ul>
+                <li>Use &lt;img src= width="" height="" alt=""&gt; </li>
+                <li>It is better to specify width and height, in order to reserve space, especially wile loading</li>
+                <li>It is inline tag, in case use p for new line</li>
+            </ul>
+        </section>  
+ 
+    <h1 id="w2">Week 2</h1>
+        <section>
+            <h2>Power of CSS</h2> 
+            <ul>
+                <li>it is necessary for presentation </li>
+                <li>html gives structure, css gives the style</li>
+                <li>CascadingStyleSheets</li>
+                <li>CSS ZEN GARDEN .com</li>
+            </ul>
+        </section> 
+        <section>
+            <h2>Anatomy of CSS</h2> 
+            <ul>
+                <li>selector p{property: blue; (this is a declaration)} </li>
+                <li>color, font-size, text-align</li>
+                <li> put in style section after title in head section</li>
+            </ul>
+        </section>         
+
+        <section>
+            <h2>Element, Class and ID Selectors</h2> 
+            <ul>
+                <li>Element (example p) </li>
+                <li class="green">Class .class_name in css, each element has to have attribute class = class_name</li>
+                <li id="cssIDselector">ID in css #id_name</li>
+                <li>possible to group div, .class_name</li>
+            </ul>
+        </section>  
+        
+        <section>
+            <h2>Combining Selectors</h2> 
+            <ul  class="big">
+                <li> p.big every p that has a class "big" </li>
+                <li> child selector "article &gt; p" "every p that is a direct child of an article element </li>
+                <li> descendend selector "article p" "p is inside any level of article"</li>
+            </ul>
+        </section>      
+        
+        <section>
+            <h2>Pseudo Class Selectors</h2> 
+            <ul>
+                <li>Change style depending on user interaction </li>
+                <ul>
+                    <li>:link</li>
+                    <li>:visited</li>
+                    <li>:hover</li>
+                    <li>:active</li>
+                    <li>:nth-child(...)</li>
+                </ul>
+            </ul>
+        </section>         
+
+    <!-- Template for notes -->
+    <section>
+        <h2>H2</h2> 
+        <ul>
+            <li>LI </li>
+        </ul>
+    </section>    
+
+
+
+    <aside> Thi is ASIDE </aside>
+    <footer> This is footer </footer>
+
 </body>
 </html>
