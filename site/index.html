@@ -16,74 +16,14 @@
     <!-- tile is needed -->
     <title>Hello Cousera Test</title>
 
+    <link rel="stylesheet" href="style.css">
+    <!-- CSS style can also be inserted here -->
     <style>
-        p {
-            color: blue;
-            font-size: 20px;
-            width: 280 px;
-        }
         h1 {
-            color: red;
-            font-size: 50px;
-            text-align: center;
-            font-style: oblique;
-
+            color: maroon;
         }
-        .green {
-            color: green;
-        }
-        .italic {
-            font-style: italic;
-        }
-
-        .green, .italic {
-            font-style: italic;
-
-        }
-        #cssIDselector{
-            color: yellowgreen;
-        }
-        ul {
-            list-style-type: square;
-            font-size: 20px;
-        }
-        ul.big {
-            font-size: 25px;
-        }   
-        ul.big > li {
-            color: grey;
-        }       
-
-        header li {
-            font-size: 20px;
-            list-style: none;
-        } 
-        header li:nth-child(2){
-            font-size: 25px;
-        }       
-        a:link, a:visited{
-            text-decoration: none;
-            background-color: green;
-            border: 1px solid blue;
-            color: black;
-            display: black;
-            text-align: center;
-            margin-bottom: 1px;
-        }
-        a:hover, a:active{
-            background-color: red;
-            color: purple;
-        }
-        section li:nth-child(odd) {
-            color: grey;
-        }
-        section li:nth-child(1) {
-            font-style: oblique;
-        }
-        section li:nth-child(1):hover {
-            background-color: red;
-        }        
     </style>
+    
 </head>
 <body>
     <header> This is the header of the page 
@@ -208,11 +148,125 @@
             </ul>
         </section>         
 
+    <section>
+        <h2>Style Placement</h2> 
+        <ul>
+            <li> in the head/style element </li>
+            <li> directly in element property </li>
+            <li> .css file </li>
+        </ul>
+    </section> 
+    <section>
+        <h2>Conflict Resolution</h2> 
+        <ul>
+            <li>Cascade: combine properties from different sources</li>
+            <li> how to solve conflicts </li>
+            <li> origin, merge, inheritance, specificity</li>
+            <li> origin: last declaration wins (top to bottom)</li>
+            <li> merge: if different properties they merge into one, element get both </li>
+            <li> inheritance: dom tree; children and grandchildren will inherit poperties </li>
+            <li> specificity: most specific selectors wins (style, id, class, elements). The score depends also on number of elements declared. it is possible to use !important to override (not suggested) </li>
+        </ul>
+    </section>
+    
+    <section>
+        <h2>Styling Text</h2> 
+        <ul>
+            <li> define class .style </li>
+            <li> font-family (w3 commonly used font, rely on client pc: can spcify more than one) </li>
+            <li> color (#rrggbb in hex) </li>
+            <li> font-style: italic </li>
+            <li> font-width: bold </li>
+            <li> font-size: 24px (default 16px) </li>
+            <li> text-transform: capitalize </li>
+            <li> text-align: right </li>
+            <li>Relative:
+                <ul>
+                    <li> prcentage %, relative to default </li>
+                    <li> 2em, relative to the moment it is applied. accumulating and not overriding </li>   
+                </ul>
+            </li>
+        </ul>
+    </section>    
+    
+    <section>
+        <h2>Box model</h2> 
+        <ul>
+            <li> padding, border, margin </li>
+            <li> padding: top right bottom left </li>
+            <li> the real size needs to consider also padding, margin and border</li>
+            <li> CSS3: box-sizing: border-box (or, not suggested, content-box);</li>
+            <li> box-sizing is not inherited!!! use star * (apply to all) </li>
+            <li> all borwser fully supports box-sizing </li>
+            <li> left and right margins accumulates between 2 elements</li>
+            <li> top and botton margins do not accumulate: the largest wins!</li>
+            <li> some margin are overrided by the browser, need to use override in *</li>
+            <li> how if we constrain both with and hight? the content go out of the box and other content will go over</li>
+            <li> overflow: visible (default), hidden, auto (use a sroll) or also use scroll</li>
+        </ul>
+        <div id="box">
+            <div id="content">
+                Test, Test,Test, TestTest, TestTest, TestTest, TestTest, TestTest, TestTest, TestTest, TestTest, TestTest, TestTest, TestTest, TestTest, TestTest, TestTest, TestTest, TestTest, TestTest, TestTest, Test
+            </div>
+        </div>
+    </section>   
+    
+    <section id="bg">
+        <h2>Background Property</h2> 
+        <ul>
+            <li>background-color</li>
+            <li>background-image: url("/img/background.jpg")</li>
+            <li> image is repeated, to control use background-repeat </li>
+            <li> image wins wrt backgorund color</li>
+            <li> can specify background-position</li>
+            <li> if only background is used it overrides everything about color etc</li>
+        </ul>
+    </section>
+    
+    <section>
+        <h2>Floating the Elements</h2> 
+        <ul>
+            <li> Most used today</li>
+            <li> use float</li>
+            <li> if floating margin do not collapse if in contact with external border</li>
+            <li> takes out of regular flow</li>
+            <li> needs to say to browser to resume using clear: left </li>
+        </ul>
+        <div>
+            <p id="p1"> test1, test1, test1, test1, test1, test1, test1, test1, test1, test1, test1, test1, test1, test1, test1, test1, test1, test1, test1, test1, test1, test1, test1, test1 </p>
+            <p id="p2"> 2 test1, test1, test1, test1, test1, test1, test1, test1, test1, test1, test1, test1, test1, test1, test1, test1, test1, test1, test1, test1, test1, test1, test1, test1, test1, test1, test1, test1, test1, test1, test1, test1, </p>
+
+        </div>
+    </section>     
+
+    <section>
+        <h2> Relative and Absolute element Positioning</h2> 
+        <ul>
+            <li> Relative to its position in normal element flow </li>
+            <li> offset top bottom left right (from top, from left etc) </li>
+            <li> position: relative; top: 50px; left: 50px</li>
+        </ul>
+        <p id="p5"> T</p>
+
+        <ul>
+            <li> Absolute relative to the position of the nearest ancestor which ha positioning set to it other than static </li>
+            <li> offset top bottom left right (from top, from left etc) </li>
+        </ul>
+        <div id="container">     
+            <p id="p6"> P6 </p>
+            <p id="p7"> P7 </p>
+        </div>
+    </section>  
+
     <!-- Template for notes -->
     <section>
         <h2>H2</h2> 
         <ul>
-            <li>LI </li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
         </ul>
     </section>    
 

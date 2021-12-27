@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+#bg {
+    color: white;
+    height: 500px;
+    background-color: black;
+    background-image: url("img/background.jpg");
+    background-repeat: repeat;
+    background-position: top center;
+    padding: 60px;
+    margin: 2px 10px 2px 10px;
+
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: lowercase;
+    background-color: whitesmoke;
+    margin: 40px;
+    padding: 10px;
+}
+
+#box {
+    background-color: green;
+    padding: 10px 10px 10px 10px;
+    border: 3px solid black;
+    margin: 40px;
+    width: 300px;
+    height: 100px;
+    overflow: auto;
+}
+#content {
+    background-color: coral;
+}
+p {
+    color: blue;
+    font-size: 20px;
+    width: 50%;
+    overflow: auto;
+    border: 1px solid;
+    padding: 10px;
+}
+
+#p1 {
+    background-color: brown;
+    float: left;
+
+}
+#p2 {
+    background-color: azure;
+    float: right;
+
+}
+#p3 {
+    background-color: mediumslateblue;
+    clear: left;
+}
+#p4 {
+    background-color: yellow;
+}
+
+#p5 {
+    background-color: yellow;
+    position: relative;
+    left: 150px;
+    width: 50px;
+    height: 50px;
+}
+
+div#container {
+    background-color:blue;
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+#p6 {
+    background-color: yellow;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+}
+#p7 {
+    background-color: green;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+
+}
+
+h1 {
+    color: red;
+    font-size: 50px;
+    text-align: center;
+    font-style: oblique;
+
+}
+div {
+    background-color: aqua;
+}
+.green {
+    color: green;
+}
+.italic {
+    font-style: italic;
+}
+
+.green, .italic {
+    font-style: italic;
+
+}
+#cssIDselector{
+    color: yellowgreen;
+}
+ul {
+    list-style-type: square;
+    font-size: 20px;
+}
+ul.big {
+    font-size: 25px;
+}   
+ul.big > li {
+    color: grey;
+}       
+
+header li {
+    font-size: 20px;
+    list-style: none;
+} 
+header li:nth-child(2){
+    font-size: 25px;
+}       
+a:link, a:visited{
+    text-decoration: none;
+    background-color: green;
+    border: 1px solid blue;
+    color: black;
+    display: black;
+    text-align: center;
+    margin-bottom: 1px;
+}
+a:hover, a:active{
+    background-color: red;
+    color: purple;
+}
+section li:nth-child(odd) {
+    color: grey;
+}
+section li:nth-child(1) {
+    font-style: oblique;
+}
+section li:nth-child(1):hover {
+    background-color: red;
+}   
+section {
+    clear: both;
+    margin: 40px;
+    padding: 10px;    
+}
+li > ul > li {
+    margin-left: 2em;
+}
