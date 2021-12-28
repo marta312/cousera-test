@@ -3,6 +3,7 @@
     margin: 0px;
     padding: 0px;
 }
+
 #bg {
     color: white;
     height: 500px;
@@ -16,10 +17,11 @@
 }
 body {
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
     text-transform: lowercase;
     background-color: whitesmoke;
-    margin: 40px;
-    padding: 10px;
+    margin: 1%;
+    padding: 2%;
 }
 
 #box {
@@ -34,20 +36,87 @@ body {
 #content {
     background-color: coral;
 }
+
+div {
+    background-color:tomato;
+}
+div.container {
+    background-color:blue;
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
 p {
     color: blue;
     font-size: 20px;
-    width: 50%;
+    width: 90%;
+    height: 150px;
     overflow: auto;
-    border: 1px solid;
-    padding: 10px;
+    border: 1px solid black;
+    margin-right: auto;
+    margin-left: auto;    
 }
+
+
+.row {
+    width: 100%;
+    background-color: red;
+}
+
+/* media queries, be carfull not to overlap sizes */
+@media (min-width: 1200px){ 
+    .col-lg-1, .col-lg-2, .col-lg-3,.col-lg-4, .col-lg-5, .col-lg-6,.col-lg-7, .col-lg-8, .col-lg-9,.col-lg-10, .col-lg-11, .col-lg-12{
+        float: left;
+        border: 1px solid green;
+        background-color: maroon;
+    }
+    .col-lg-1{
+        width: 8.33%;
+    }
+    .col-lg-2{
+        width: 16.66%;
+    }
+    .col-lg-3{
+        width: 25%;
+    }
+    .col-lg-4{
+        width: 33%;
+    }
+    .col-lg-5{
+        width: 41.66%;
+    }
+    .col-lg-6{
+        width: 50%;
+    }
+    .col-lg-7{
+        width: 58%;
+    }
+    .col-lg-8{
+        width: 66.66%;
+    }
+    .col-lg-9{
+        width: 74.99%;
+    }
+    .col-lg-10{
+        width: 83.33%;
+    }
+    .col-lg-11{
+        width: 91.66%;
+    }
+    .col-lg-12{
+        width: 100%;
+    }    
+}
+
 
 #p1 {
     background-color: brown;
     float: left;
 
 }
+
+
 #p2 {
     background-color: azure;
     float: right;
@@ -69,12 +138,7 @@ p {
     height: 50px;
 }
 
-div#container {
-    background-color:blue;
-    position: relative;
-    width: 300px;
-    height: 300px;
-}
+
 #p6 {
     background-color: yellow;
     width: 50px;
@@ -92,7 +156,23 @@ div#container {
     left: 50px;
 
 }
+#p8 {
+    background-color: yellow;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    bottom: 50px;
+    right: 50px;
+}
+#p9 {
+    background-color: green;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 50px;
+    left: 50px;
 
+}
 h1 {
     color: red;
     font-size: 50px;
@@ -100,9 +180,7 @@ h1 {
     font-style: oblique;
 
 }
-div {
-    background-color: aqua;
-}
+
 .green {
     color: green;
 }
@@ -159,8 +237,7 @@ section li:nth-child(1):hover {
 }   
 section {
     clear: both;
-    margin: 40px;
-    padding: 10px;    
+   
 }
 li > ul > li {
     margin-left: 2em;

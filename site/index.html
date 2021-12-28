@@ -246,18 +246,92 @@
             <li> offset top bottom left right (from top, from left etc) </li>
             <li> position: relative; top: 50px; left: 50px</li>
         </ul>
-        <p id="p5"> T</p>
+        <div class="container">     
+            <p id="p8"> P8 </p>
+            <p id="p9"> P9 </p>
+        </div>
 
         <ul>
             <li> Absolute relative to the position of the nearest ancestor which ha positioning set to it other than static </li>
             <li> offset top bottom left right (from top, from left etc) </li>
         </ul>
-        <div id="container">     
+        <div class="container">     
             <p id="p6"> P6 </p>
             <p id="p7"> P7 </p>
         </div>
     </section>  
 
+    <section>
+        <h2>Media Queries</h2> 
+        <ul>
+            <li> to customize appereance depending on screen size</li>
+            <li> be carefull not to overlap sizes </li>
+            <li> with chrome developer tools can be used to verify </li>
+            <li> @media {} </li>
+        </ul>
+    </section> 
+
+    <section>
+        <h2> Responsive Device </h2> 
+        <ul>
+            <li> fluid (content like water) adapt to size of device </li>
+            <li> prportion based grids </li>
+            <li> flexible images </li>
+            <li> CSS3 media queries </li>
+            <li> (use percentages) </li>
+            <li> server with detect user agent: drawback, you have 2 codes to mintain, many different devices</li>
+            <li> 12-column grid respnsive layout (used also by bootstrap) </li>
+            <li> 12 because it is possible to divide by a lot of combinations </li>
+            <li> 8.33% for each column, 3 -> 25%, 6 -> 50%, 4 -> 33.33%</li>
+            <li> nested grids: inside 1 you will have another 12-grid </li>
+            <li> width specified, margin-left(right): auto</li>
+            <li> phone devices by default apply zoom out on browser, there is a metatag to say the browser not to zoom out</li>
+            <li> name="viewport" content="width=device-width,initial-scale=1"</li>
+        </ul>
+        <div class="row">
+            <div class="col-lg-3"><p> Item 1 </p></div>
+            <div class="col-lg-3"><p> Item 2 </p></div>
+            <div class="col-lg-3"><p> Item 3 </p></div>
+            <div class="col-lg-3"><p> Item 4 </p></div>
+            <div class="col-lg-3"><p> Item 5 </p></div>
+            <div class="col-lg-3"><p> Item 6 </p></div>
+            <div class="col-lg-3"><p> Item 7 </p></div>
+            <div class="col-lg-3"><p> Item 8 </p></div>
+        </div>
+    </section>      
+
+    <section>
+        <h2> Bootstrap </h2> 
+        <ul>
+            <li> framework HTML, CSS, JS </li>
+            <li> CSS classes predefined, requires HTML structure </li>
+            <li> Code for mobile first, than desktop </li>
+            <li> drawback: many features not used, can download only needed </li>
+            <li> getbootstrap.com -> download </li>
+            <li> jquery.com -> download version 1.x </li>
+            <li><a href="index_bootstrap.html"> This is bootstrap index.html </a></li>
+            <li> style.css is for customization, link has to put after default bootstrap css</li>
+            <li> at the very end of body tag it is necessary to insert script for jquery (script.js is empty, for custom code)</li>
+        </ul>
+    </section>  
+
+    <section>
+        <h2> Bootstrap Grid System </h2> 
+        <ul>
+            <li> general structure:
+                <ul>
+                    <li> div class container or container-fluid </li>
+                    <li> div class row, horizontal groups of column, applies negative left/right margin, in order to align nice</li>
+                    <li> div class col-md-4 (col-SIZE-SPAN)</li>
+                    <li> if col-xs-4 (!!! changed to col-4 in new bootstrap?) is specifies it will stay always like that independently of screen size</li>
+                </ul>
+            </li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </section>  
     <!-- Template for notes -->
     <section>
         <h2>H2</h2> 
