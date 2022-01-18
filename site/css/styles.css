@@ -5,3 +5,32 @@
     border: 2px solid red;
     background-color: greenyellow;
 }
+body {
+    font-size: 16px;
+    color: #fff;
+    background-color: #61122f;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/** HEADER **/
+#header-nav-brandname {
+    color: green;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 0.75;
+    text-decoration: none;
+
+}
+
+#header-nav {
+    background-color: #f6b319;
+    border-radius: 0;
+    border: 0;
+}
+
+
+
